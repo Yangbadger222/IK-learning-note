@@ -212,7 +212,7 @@ q_1 q_2 = \begin{bmatrix} w_1w_2 - x_1x_2 - y_1y_2 - z_1z_2 \\ w_1x_2 + x_1w_2 +
 A^{-1} = \frac{1}{\det(A)} \begin{bmatrix} d & -b \\ -c & a \end{bmatrix}
 ```
 
-其中 $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$，$\det(A) = ad - bc$
+其中 $ A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$，$\det(A) = ad - bc $
 
 ### 伪逆
 
@@ -244,7 +244,7 @@ J^+ = (J^TJ)^{-1}J^T
 \theta_{n+1} = \theta_n - H^{-1} \nabla f(\theta_n)
 ```
 
-其中 $H$ 是Hessian矩阵
+其中 $ H $ 是Hessian矩阵
 
 ### 线搜索
 

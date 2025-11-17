@@ -11,7 +11,7 @@
 #### 1. 行内公式
 使用单个 `$` 包裹，例如：
 
-这是行内公式 $x = 5$ 的示例。
+这是行内公式 $ x = 5 $ 的示例。
 
 #### 2. 块级公式（推荐格式）
 
@@ -25,9 +25,9 @@
 
 下面是一个向量：
 
-$$
+```math
 \vec{v} = \begin{bmatrix} x \\ y \end{bmatrix}
-$$
+```
 
 上面的公式应该能正确显示。
 
@@ -36,7 +36,11 @@ $$
 #### ❌ 错误格式（会显示为乱码）
 ```
 **解答**：
-$$\vec{AB} = B - A = \begin{bmatrix} 4-1 \\ 6-2 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}$$
+
+```math
+\vec{AB} = B - A = \begin{bmatrix} 4-1 \\ 6-2 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
+```
+
 ```
 
 #### ✅ 正确格式1（使用math代码块）
@@ -53,9 +57,10 @@ $$\vec{AB} = B - A = \begin{bmatrix} 4-1 \\ 6-2 \end{bmatrix} = \begin{bmatrix} 
 ```
 **解答**：
 
-$$
+```math
 \vec{AB} = B - A = \begin{bmatrix} 4-1 \\ 6-2 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
-$$
+```
+
 ```
 
 ## 🔧 快速修复方法
@@ -64,7 +69,11 @@ $$
 
 将所有的：
 ```
-$$公式$$
+
+```math
+公式
+```
+
 ```
 
 替换为：
@@ -113,7 +122,11 @@ import re
 import os
 
 def fix_math_blocks(content):
-    # 将 $$...$$ 转换为 ```math ... ```
+
+```math
+...
+```
+
     # 处理多行公式
     pattern = r'\$\$(.*?)\$\$'
     

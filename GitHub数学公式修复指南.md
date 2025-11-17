@@ -45,7 +45,8 @@ $$\vec{AB} = B - A = \begin{bmatrix} 4-1 \\ 6-2 \end{bmatrix} = \begin{bmatrix} 
 
 ```math
 \vec{AB} = B - A = \begin{bmatrix} 4-1 \\ 6-2 \end{bmatrix} = \begin{bmatrix} 3 \\ 4 \end{bmatrix}
-``` 
+```
+
 （注意：这里需要闭合反引号）
 
 #### ✅ 正确格式2（双美元符号加空行）
@@ -68,9 +69,11 @@ $$公式$$
 
 替换为：
 ````
+
 ```math
 公式
 ```
+
 ````
 
 ### 方案B：确保双美元符号前后有空行
